@@ -14,6 +14,7 @@ const Title = styled(({
   font-family: ${font('primary')};
   font-size: ${({ fontSize }) => size(fontSize)};
   font-weight: ${({ fontWeight }) => key(['fontWeight', fontWeight])};
+  margin: 0;
   transition: color .3s ${key(['cubicBezier', 'standard'])};
 
   :hover {
@@ -39,12 +40,11 @@ Title.propTypes = {
 }
 
 Title.defaultProps = {
-  color: { type: 'grayscale', position: 0 },
+  color: { type: 'primary', position: 0 },
   fontSize: 'extraLarge',
   fontWeight: 'medium',
   hoverColor: { type: 'grayscale', position: 0 },
   level: 1,
-  margin: '0',
 }
 
 export default Title

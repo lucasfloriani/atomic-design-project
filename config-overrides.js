@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 const path = require('path')
 const {
   addWebpackAlias,

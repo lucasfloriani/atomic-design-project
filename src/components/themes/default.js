@@ -23,7 +23,7 @@ export const theme = {
     extraLarge: '0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)',
   },
   sizes: {
-    extraLarge: '1.8em',
+    extraLarge: '2.2em',
     large: '1.6em',
     medium: '1.4em',
     normal: '1.2em',
@@ -49,7 +49,9 @@ export const getOptionsFrom = option => Object.keys(theme[option])
 
 export const GlobalStyles = createGlobalStyle`
   body {
+    background-color: #e0f2f5;
     margin: 0;
+    min-height: 100vh;
     width: 100%;
   }
   a[disabled] {
